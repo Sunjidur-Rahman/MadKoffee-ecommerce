@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 70px; 
+}
+body{
+    font-family: "Lexend Exa";
+
+}
+@keyframes custom-pulse {
+    0%, 100% {
+        transform: scale(1);
+       /* Normal size */
+    }
+    50% {
+        transform: scale(1.05);
+         /* Slightly bigger */
+    }
+  }
+.animate-custom-pulse {
+    animation: custom-pulse 3s ease-in-out infinite;
+  }
+
+  .product-card {
+    opacity: 0;  
+    transform: translateY(20px); 
+    transition: all 0.5s ease; 
+  }
+  
+  .product-card.show {
+    opacity: 1;  
+    transform: translateY(0); 
+  }
+ 
